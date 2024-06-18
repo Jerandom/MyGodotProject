@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c00o2p4p2himo"]
+
+[ext_resource type="Script" path="res://Scene/UtilityScene/InteractionManager.gd" id="1_afocr"]
+
+[node name="InteractionManager" type="Node3D"]
+script = ExtResource("1_afocr")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Hello World"
+horizontal_alignment = 1
+vertical_alignment = 1

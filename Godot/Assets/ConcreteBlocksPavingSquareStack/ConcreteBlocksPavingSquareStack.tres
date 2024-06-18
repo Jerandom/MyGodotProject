@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" load_steps=9 format=3 uid="uid://ctr1evhnwf3et"]
+
+[ext_resource type="Shader" path="res://Script/gdShaderScript/ConcreteGround.gdshader" id="1_y0k5o"]
+[ext_resource type="Texture2D" uid="uid://xm5h8y7rqbp4" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_COL_1K.png" id="2_klphc"]
+[ext_resource type="Texture2D" uid="uid://3ucqkfvlngai" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_AO_1K.png" id="3_6a1mg"]
+[ext_resource type="Texture2D" uid="uid://da2f2i3db544w" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_BUMP_1K.png" id="4_c8xjp"]
+[ext_resource type="Texture2D" uid="uid://5qhhsvpa6j8w" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_DISP_1K.png" id="5_wecy1"]
+[ext_resource type="Texture2D" uid="uid://c12e2dv2x5sge" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_NRM_1K.png" id="6_lfuxb"]
+[ext_resource type="Texture2D" uid="uid://d1pbojri20tjx" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_REFL_1K.png" id="7_ypbwq"]
+[ext_resource type="Texture2D" uid="uid://bav086fvg3l2c" path="res://Assets/ConcreteBlocksPavingSquareStack/ConcreteBlocksPavingSquareStack_GLOSS_1K.png" id="8_w1fhk"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_y0k5o")
+shader_parameter/displacement_amount = 0.0
+shader_parameter/albedo_map = ExtResource("2_klphc")
+shader_parameter/normal_map = ExtResource("6_lfuxb")
+shader_parameter/bump_map = ExtResource("4_c8xjp")
+shader_parameter/ao_map = ExtResource("3_6a1mg")
+shader_parameter/roughness_map = ExtResource("8_w1fhk")
+shader_parameter/displacement_map = ExtResource("5_wecy1")
+shader_parameter/reflection_map = ExtResource("7_ypbwq")

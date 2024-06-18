@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="MovementState" load_steps=2 format=3 uid="uid://duclf10egnfyq"]
+
+[ext_resource type="Script" path="res://Armature/Character/Player/Script/State_Machine.gd" id="1_m4r3h"]
+
+[resource]
+script = ExtResource("1_m4r3h")
+id = 1
+movement_speed = 3.0
+acceleration = 7.0
+camera_fov = 72.5
+animation_speed = 1.0

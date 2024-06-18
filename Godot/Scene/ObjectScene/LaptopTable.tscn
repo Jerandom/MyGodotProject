@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://dsb0vqpql8kjb"]
+
+[ext_resource type="Script" path="res://Assets/Laptop_Table_Set/Script/LaptopTable.gd" id="1_bfnit"]
+[ext_resource type="PackedScene" uid="uid://bqlym4i5d0go1" path="res://Assets/Laptop_Table_Set/Laptop_Table_Set.glb" id="1_o1gqi"]
+[ext_resource type="PackedScene" uid="uid://c2g4d552mnc3o" path="res://Scene/UtilityScene/Interaction_Area.tscn" id="3_4m070"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v3ydc"]
+size = Vector3(1.81042, 0.835785, 1.13092)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_07ir4"]
+size = Vector3(0.45343, 0.837036, 0.27832)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_n33tk"]
+
+[node name="StaticBody" type="StaticBody3D"]
+script = ExtResource("1_bfnit")
+
+[node name="Laptop_Table_Set" parent="." instance=ExtResource("1_o1gqi")]
+transform = Transform3D(1, 0, 0, 0, 0.999488, 0.0320039, 0, -0.0320039, 0.999488, 0, 0, 0)
+
+[node name="CollisionTable" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.10352e-05, 0.463739, 0.778873)
+shape = SubResource("BoxShape3D_v3ydc")
+
+[node name="CollisionChair" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0050354, 0.41217, 0.00258777)
+shape = SubResource("BoxShape3D_07ir4")
+
+[node name="InteractionArea" parent="." instance=ExtResource("3_4m070")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionArea"]
+transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, 0, 0.521822, 0)
+shape = SubResource("SphereShape3D_n33tk")
