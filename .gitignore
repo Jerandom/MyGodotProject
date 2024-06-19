@@ -17,7 +17,6 @@ mono_crash.*.json
 # auto generated ignores
 Godot/icon.svg
 Godot/icon.svg.import
-Godot/project.godot
 
 *.tmp
 *.bin
