@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="JumpState" load_steps=2 format=3 uid="uid://ctkag03y10khv"]
+
+[ext_resource type="Script" path="res://Armature/Character/Player/Script/Jump_State.gd" id="1_bwcl7"]
+
+[resource]
+script = ExtResource("1_bwcl7")
+animation_name = ""
+jump_height = 4.0
+apex_duration = 0.5
