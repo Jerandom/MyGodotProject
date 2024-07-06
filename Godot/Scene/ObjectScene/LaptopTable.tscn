@@ -27,6 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0050354, 0.41217, 0.0025877
 shape = SubResource("BoxShape3D_07ir4")
 
 [node name="InteractionArea" parent="." instance=ExtResource("3_4m070")]
+offset_y = 3.0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="InteractionArea"]
 transform = Transform3D(2.115, 0, 0, 0, 2.115, 0, 0, 0, 2.115, 0, 0.521822, 0)

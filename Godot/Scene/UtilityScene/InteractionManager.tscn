@@ -1,13 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://c00o2p4p2himo"]
+[gd_scene load_steps=3 format=3 uid="uid://c00o2p4p2himo"]
 
 [ext_resource type="Script" path="res://Scene/UtilityScene/InteractionManager.gd" id="1_afocr"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_12ltl"]
+viewport_path = NodePath("Sprite3D/SubViewport")
 
 [node name="InteractionManager" type="Node3D"]
 script = ExtResource("1_afocr")
 
-[node name="Label" type="Label" parent="."]
+[node name="Sprite3D" type="Sprite3D" parent="."]
+billboard = 1
+texture = SubResource("ViewportTexture_12ltl")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+
+[node name="Label" type="Label" parent="Sprite3D/SubViewport"]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Hello World"
-horizontal_alignment = 1
-vertical_alignment = 1
+text = "Hello World!"
